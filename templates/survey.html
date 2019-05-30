@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <title>Event survey</title>
+    </head>
+    <body>
+		<h1>EVENT SURVEY</h1>
+		<hr>
+
+		<form method="post" action="{{ url_for('suthankyou') }}">
+
+      <h3>Commercial / Enterprise</h3>
+      <input type="radio" name="affiliation" value="commercial" checked>Commercial<br>
+      <input type="radio" name="affiliation" value="enterprise">Enterprise<br><br>
+
+      <h3>State</h3>
+      <select name="state">
+         <option value="vic">VIC</option>
+         <option value="nsw">NSW</option>
+         <option value="sa">SA</option>
+         <option value="ql">QL</option>
+      </select>
+
+      <h3>Feedback</h3>
+      <input type="text" name="feedback" style="width: 500px;"><br>
+			<hr>
+			<br>
+		  <input type="submit" value="SUBMIT"/>
+		</form>
+
+		</body>
+</html>
